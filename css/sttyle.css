@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-image: url(../images/bg-mobile.svg);
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-container {
+  width: 595px; 
+  height: 1448px;
+  margin:  75px auto 40px;
+}
+
+/* .......................SECTION UNO..................... */
+
+.section-1 {
+    height: 724px;
+}
+.contenerdor-logo{
+    width: 180px;
+    margin-bottom: 60px;
+}
+
+.image-mockups{
+    width: 595px;
+}
+/* ......................SECCION DOS....................... */
+
+.section-2 {
+    height: 724px;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    height: 170px;
+}
+
+.parrafo{
+    font-size: 31px;
+    text-align: center;
+    height: 280px;
+}
+
+.btn-register{
+    text-align: center;
+    margin-bottom: 122px;
+}
+
+.btn-register a{
+    width: 400px;
+    height: 86px;
+    font-size: 25px;
+    border-radius: 50px;
+    color: var(--Violet);
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding-top: 22px;
+    background-color: white;
+}
+
+.btn-register a:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+.contenerdor-iconos{
+    text-align: center;
+}
+
+.redes{
+    width: 200px;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.redes a{
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    padding-top: 12px;
+}
+
+.redes a:hover{
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+/* Seccion responsiva */
+
+@media(min-width:1284px){
+
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-size: unset;
+    }
+    
+    .main-container{
+        margin: 60px auto 0;
+        width:  1284px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .......................SECTION UNO..................... */
+
+    .section-1{
+        width: 753px;
+        height: 700px;
+    }
+
+    .contenerdor-logo{
+        margin-bottom: 20px;
+        height: 134px;
+
+    }
+
+    .image-mockups{
+        width: 696px;
+    }
+
+    /* .......................SECTION DOS..................... */
+
+
+    .section-2{
+        height: 700px;
+    }
+
+    .title{
+        margin-top: 190px;
+        height: 133px;
+        font-size: 39px;
+        text-align: left;
+        padding-right: 93px;
+    }
+
+    .parrafo{
+        height: 120px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .btn-register{
+        text-align: left;
+        margin-bottom: 139px;
+    }
+
+    .btn-register .btn{
+        width: 200px;
+        height: 58px;
+        font-size: 20px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .contenerdor-iconos{
+        text-align: right;
+
+    }
+
+    .redes{
+        width: 156px;
+    }
+
+    .redes a{
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+        padding: 8px;
+        text-align: center;
+    
+    }
+}
